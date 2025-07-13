@@ -1,14 +1,24 @@
-# RasperryPi-Networking
-This Is How I Am Setting Up A Rasberry Pi To Be My Personal Security Network 
+# Stand-Ready Network 
 
-**🧱 What Tools:**
+A plug-and-play Raspberry Pi cybersecurity toolkit built to secure home and small business networks. Includes DNS filtering, VPN, monitoring, logging, and local dashboard control.
 
-**Pi-hole**-->	DNS filtering and network logging
-<BR>
-**WireGuard**-->VPN backdoor into your home from anywhere
-<BR>
-**Prometheus + Exporters**	--> Metric collection for network + system health
-<BR>
-**Nginx	Serv**e --> your own dashboard, links, or PDF reports
-<BR>
-**Rclone + Cloud**	--> Sync logs/configs offsite (Dropbox/Google Drive/etc)
+## 🔧 What's Inside
+- Pi-hole (DNS/ad-blocking)
+- WireGuard (secure VPN access)
+- Prometheus + Grafana (monitoring)
+- Nginx (custom local dashboard)
+- node_exporter (system metrics)
+- Rclone (cloud sync logs)
+
+## 📦 Requirements
+- Raspberry Pi 4 (4GB+)
+- 32GB+ SD card
+- Ethernet connection (recommended)
+- Docker + Docker Compose
+
+## 🚀 Quick Start
+```bash
+git clone https://github.com/Bmoney42/stand-ready-pi.git
+cd stand-ready-pi/docker
+cp .env.example .env
+sudo docker-compose up -d
