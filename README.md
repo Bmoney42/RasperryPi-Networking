@@ -18,7 +18,36 @@ A plug-and-play Raspberry Pi cybersecurity toolkit built to secure home and smal
 
 ## 🚀 Quick Start
 ```bash
-git clone https://github.com/Bmoney42/stand-ready-pi.git
-cd stand-ready-pi/docker
-cp .env.example .env
-sudo docker-compose up -d
+sudo apt update && sudo apt upgrade -y
+```
+Set Up Static IP - 
+ ```bash
+Set Inside Router
+```
+Reboot Your Machine And SSH Back In 
+```bash
+sudo reboot
+```
+Install Doctor:
+```bash
+curl -sSL https://get.docker.com | sh
+```
+Set User To Docker Group 
+```bash
+sudo usermod -aG docker $USER
+```
+Reboot & SSH Back In 
+```bash
+sudo reboot
+```
+Install Doctor Compose 
+```bash
+sudo apt install docker-compose -y
+```
+
+
+
+
+
+
+
